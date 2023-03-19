@@ -1,0 +1,25 @@
+﻿<Window x:Class="TF2ModDownloader.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TF2ModDownloader"
+        mc:Ignorable="d"
+        Title="TF2ModDownloader" Height="450" Width="400" ResizeMode="CanMinimize" Background="White" Icon="/Papirus-Team-Papirus-Apps-Team-fortress-2.32.png">
+    <Grid Background="DimGray">
+
+
+        <Button x:Name="Downloadbutton" Content="Download" HorizontalAlignment="Left" VerticalAlignment="Top" Background="Gray" Foreground="White" Click="Download_Click" Margin="125,330,0,0" Height="72" Width="136" FontSize="24"/>
+        <Button x:Name="Browsebutton" Content="Browse" HorizontalAlignment="Left" Margin="125,77,0,0" VerticalAlignment="Top" Background="Gray" Foreground="White" Click="Browse_Click" Height="72" Width="136" FontSize="24"/>
+        <Label Content="Browse to your Steam directory" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="70,16,0,0" Foreground="White" Height="56" Width="289" FontSize="18"/>
+        <Label Content="Choose the mod that you want to install" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="37,166,0,0" Foreground="White" Width="433" FontSize="18" Height="67"/>
+        <ComboBox x:Name="Combobox" HorizontalAlignment="Left" Margin="125,230,0,0" VerticalAlignment="Top" Width="136" Height="40">
+            <ComboBoxItem Content="Pre Fortress 2"/>
+            <ComboBoxItem Content="Team Fortress 2 Classic"/>
+            <ComboBoxItem Content="Open Fortress"/>
+        </ComboBox>
+        <ProgressBar x:Name="DownloadBar" HorizontalAlignment="Center" Height="33" Margin="0,288,0,0" VerticalAlignment="Top" Width="380"/>
+
+
+    </Grid>
+</Window>
